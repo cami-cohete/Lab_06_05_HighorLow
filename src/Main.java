@@ -27,6 +27,20 @@ public class Main
             System.out.println("Please restart the program and enter a valid integer!");
             System.exit(0);
         }
-        
+
+        if (userGuess == randomNum)
+        {
+            System.out.println("Winner Winner Chicken Dinner! Your guess is correct, the random number was: " + randomNum);
+        }
+        else if (userGuess > randomNum)
+        {
+            System.out.println("Your guess was too high!");
+            System.out.println("The random number was: " + randomNum);
+        }
+        else
+        {
+            System.out.println("Your guess was too low!");
+            System.out.println("The random number was: " + randomNum);
+        }
     }
 }
